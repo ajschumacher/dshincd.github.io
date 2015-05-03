@@ -37,7 +37,7 @@ Iterative design is a process where your workflow is broken down into phases (it
 
 There are several advantages to the iterative design process:
 
-* You can respond more quickly to changes in client needs or the environment you're working in
+* You can respond quicker to changes in client needs or the environment you're working in
 * It helps you to combat perfectionism
 * It fits well with today's fast-paced work environment
 * After each cycle, you have an actual product that you can show someone
