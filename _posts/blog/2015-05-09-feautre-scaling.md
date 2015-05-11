@@ -10,7 +10,7 @@ feature:
 date: 2015-05-09
 ---
 
-The [scikit-learn](http://scikit-learn.org/stable/) module makes it surprisingly easy to implement a wide range of machine learning algoirthms in Python. Often times, the only parameter you need to specify is the model itself, and scikit-learn will do the rest.
+The [scikit-learn](http://scikit-learn.org/stable/) module makes it surprisingly easy to implement a wide range of machine learning algoirthms in Python. Often times, the only parameters you need to specify are your model and data, and scikit-learn will do the rest.
 
 But before putting your raw data into the model, it's important that it's in the right format. This means ensuring that your predictor variables are numerical and properly scaled. This post will focus on properly scaling your features.
 
@@ -50,8 +50,10 @@ X_train_std = std_scalar.transform(X_train)
 X_test_std = std_scalar.transform(X_test)
 {% endhighlight %}
 
-Scaling has a big impact on the quality of some models (SVM, kNN), a small impact on others (logistic regression, decision trees), and no impact on Naive Bayes (since the model does feature scaling by design):
+Normalizing to standard normal scale has a big impact on the quality of some models (SVM, kNN), a small impact on others (logistic regression, decision trees), and no impact on Naive Bayes (since the model does feature scaling by design):
 
 ![scaled_roc](/images/scaled_roc.png)
 
 [Check out my code](/articles/Feature scaling demo.html)
+
+There are many other ways to transform your variables, scaling being only one class of ways, and it's definitely worth exploring to try to improve the predictive power and fits of your models.
