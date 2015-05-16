@@ -18,7 +18,7 @@ But before putting your raw data into the model, it's important that it's in the
 
 **Standard scale**
 
-Features can be scaled to a standard normal distribution with mean 0 and variance 1 by calculating Z-scores for every observation. This will transform the data so that most of your data falls between [-3, 3].
+Features can be scaled to have mean 0 and variance 1, which is also known as calculating Z-scores for every observation. This will usually transform the data so that most of your data falls between [-3, 3].
 
 **Min-max scale**
 
